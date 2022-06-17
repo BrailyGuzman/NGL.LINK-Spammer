@@ -1,6 +1,11 @@
-import requests
-from colorama import init, Fore, Back, Style
-import os
+try:
+    import requests
+    from colorama import init, Fore, Back, Style
+    import os
+except ModuleNotFoundError:
+    'pip3 install requests'
+    'pip3 install colorama'
+
 init(autoreset=False)
 os.system("cls")
 
@@ -9,6 +14,7 @@ print(f"{Fore.LIGHTCYAN_EX}NGL.LINK Spammer! By @ykw on IG!")
 target = input(f"{Fore.GREEN}Enter {Fore.RED}Target: {Fore.WHITE}")
 question = input(f"{Fore.GREEN}Enter {Fore.RED}Question: {Fore.WHITE}")
 start = input(f"{Fore.WHITE}Are you {Fore.GREEN}Ready? Y/N: {Fore.WHITE}").upper()
+
 def spam():
     questions_count = 0
     url = f"https://ngl.link/{target}"
