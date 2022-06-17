@@ -10,7 +10,7 @@ init(autoreset=False)
 os.system("cls")
 
 r = requests.Session()
-print(f"{Fore.LIGHTCYAN_EX}NGL.LINK Spammer!")
+print(f"{Fore.LIGHTCYAN_EX}NGL.LINK Spammer! By @ykw/@linuxbg on IG")
 target = input(f"{Fore.GREEN}Enter {Fore.RED}Target: {Fore.WHITE}")
 question = input(f"{Fore.GREEN}Enter {Fore.RED}Question: {Fore.WHITE}")
 start = input(f"{Fore.WHITE}Are you {Fore.GREEN}Ready? Y/N: {Fore.WHITE}").upper()
