@@ -5,7 +5,10 @@ try:
     from colorama import init, Fore
 except ModuleNotFoundError:
     os.system('pip3 install requests')
+    import requests
     os.system('pip3 install colorama')
+    from colorama import init, Fore
+    
 
 init(autoreset=False)
 os.system("cls")
