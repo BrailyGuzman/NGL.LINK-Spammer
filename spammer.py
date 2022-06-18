@@ -1,10 +1,14 @@
+import os
+
 try:
     import requests
-    from colorama import init, Fore, Back, Style
-    import os
+    from colorama import init, Fore
 except ModuleNotFoundError:
-    'pip3 install requests'
-    'pip3 install colorama'
+    os.system('pip3 install requests')
+    import requests
+    os.system('pip3 install colorama')
+    from colorama import init, Fore
+    
 
 init(autoreset=False)
 os.system("cls")
